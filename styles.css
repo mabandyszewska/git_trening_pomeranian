@@ -6,37 +6,56 @@ html {
   font-family: "Roboto", sans-serif;
   background-color: #fff4e6;
 }
+
+body {
+  margin: 24px;
+}
+
 h1 {
   color: #ff922b;
-  padding: 24px;
+  margin: 24px 0;
 }
+
 h2 {
   color: #343a40;
-  padding: 0 24px;
+  margin: 24px 0;
 }
-table,
-th,
-td {
-  border: 1px solid #ff922b;
-  color: #343a40;
-}
+
 table {
-  width: 50%;
-  margin: 12px 24px;
-  padding: 10px;
-  border-radius: 9%;
+  min-width: 800px;
+  margin: 12px 0;
+  border-radius: 10px;
   border-collapse: collapse;
 }
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
 th {
   height: 60px;
   background-color: #ffa94d;
   color: #343a40;
 }
+
 td {
   height: 35px;
   text-align: left;
   padding: 10px;
 }
+
 tr:nth-child(odd) {
   background-color: #ffd8a8;
 }
